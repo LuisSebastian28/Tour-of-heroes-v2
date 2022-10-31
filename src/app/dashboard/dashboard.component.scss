@@ -1,5 +1,7 @@
 h2 {
   text-align: center;
+  font-size: 4em;
+  margin: 1em;
 }
 
 .heroes-menu {
@@ -7,13 +9,14 @@ h2 {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
+  margin: 4em 0;
 }
 
 a {
   background-color: #EEE;
   color: black;
   border-radius: 1em;
-  padding: 1em;
+  padding: 2em 1em;
   font-size: 1em;
   text-decoration: none;
   text-align: center;

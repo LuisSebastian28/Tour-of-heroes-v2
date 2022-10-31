@@ -1,28 +1,50 @@
-h1 {
-  margin-bottom: 0;
-  margin-top: auto;
-  position: fixed;
-}
-
-nav{
-  margin: auto;
+div{
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: black;
+  height: 20vh;
+  align-items: center;
+  padding-right: 5em;
+  padding-left: 5em;
+  margin-bottom: 2em;
 }
-
-
+h1 {
+  color: white;
+}
 nav a {
-  padding: 1rem;
+  padding: 2rem;
   text-decoration: none;
-  margin: 10px 1em 1em;
+  font-size: 1em;
+  text-align: center;
   display: inline-block;
-  align-items: flex-end;
-  background-color: #e8e8e8;
-  color: #3d3d3d;
-  border-radius: 4px;
+  background-color: #EEE;
+  color: black;
+  border-radius: 1em;
+  width: 10em;
+  margin: 1em;
 }
 
 nav a:hover {
   color: white;
   background-color: black;
+  border: 1px solid white;
+}
+
+@media (max-width: 1000px) {
+  nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+  }
+  nav a {
+    padding: 1rem;
+    font-size: 1em;
+    width: 8em;
+    margin: 0.5em;
+  }
+  div{
+    padding-right: 2em;
+    padding-left: 2em;
+  }
 }
