@@ -9,25 +9,32 @@ h2 {
   width: 20em;
 }
 .heroes li {
-  position: relative;
-}
-
-.heroes li:hover {
+  display: flex;
+  width: 150%;
 }
 
 .heroes a {
   text-decoration: none;
   color: black;
-  background-color: #EEE;
+  background-color: white;
   margin: 1em;
-  padding: 1em 0em;
+  padding: 1em 0;
   border-radius: .5em;
   display: block;
+  width: 100%;
 }
 
 .heroes a:hover {
   color: white;
   background-color: black;
+}
+
+.heroes button {
+  display: flex;
+  background-color: black;
+  color: white;
+  padding: 0 1em;
+  align-items: center;
 }
 
 .heroes .badge {
@@ -38,8 +45,18 @@ h2 {
   margin-right: 1em;
 }
 
-.content {
+.content div{
   height: 30vh;
-  width: 50vh;
+  width: 80vh;
   overflow-y: scroll;
+}
+
+.content {
+  background-color: #EEE;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 0 10%;
 }
