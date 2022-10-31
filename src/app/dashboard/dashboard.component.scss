@@ -1,0 +1,35 @@
+h2 {
+  text-align: center;
+}
+
+.heroes-menu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+a {
+  background-color: #EEE;
+  color: black;
+  border-radius: 1em;
+  padding: 1em;
+  font-size: 1em;
+  text-decoration: none;
+  text-align: center;
+  width: 100%;
+  margin: .5rem;
+
+}
+
+a:hover {
+  background-color: black;
+  color: white;
+}
+
+@media (min-width: 800px) {
+  a {
+    width: 20%;
+    box-sizing: content-box;
+  }
+}

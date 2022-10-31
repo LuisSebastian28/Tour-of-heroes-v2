@@ -1,38 +1,40 @@
 .heroes {
   list-style-type: none;
+  padding: 0;
   width: 20em;
 }
-
 .heroes li {
-  display: flex;
+  position: relative;
 }
 
-.heroes button {
-  display: flex;
-  flex: 1;
-  padding: 0;
-  border-radius: 0.5em;
+.heroes li:hover {
+}
+
+.heroes a {
+  text-decoration: none;
+  color: black;
+  background-color: #EEE;
+  margin: 1em;
+  padding: 1em 0em;
+  border-radius: .5em;
+  display: block;
+}
+
+.heroes a:hover {
+  color: white;
+  background-color: black;
 }
 
 .heroes .badge {
   color: white;
   padding: 1em;
   background-color: black;
-  border-radius: 0.5em 0 0 0.5em;
-  align-self: center;
+  border-radius: .5em 0 0 .5em;
+  margin-right: 1em;
 }
 
-.heroes .name {
-  align-self: center;
-  padding: 1em;
-}
-
-.heroes button:hover {
-  color: white;
-  background-color: rgba(0,0,0,0.5);
-}
-
-.heroes button.selected {
-  background-color: black;
-  color: white;
+.content {
+  height: 30vh;
+  width: 50vh;
+  overflow-y: scroll;
 }
