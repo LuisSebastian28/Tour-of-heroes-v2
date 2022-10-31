@@ -1,0 +1,38 @@
+.heroes {
+  list-style-type: none;
+  width: 20em;
+}
+
+.heroes li {
+  display: flex;
+}
+
+.heroes button {
+  display: flex;
+  flex: 1;
+  padding: 0;
+  border-radius: 0.5em;
+}
+
+.heroes .badge {
+  color: white;
+  padding: 1em;
+  background-color: black;
+  border-radius: 0.5em 0 0 0.5em;
+  align-self: center;
+}
+
+.heroes .name {
+  align-self: center;
+  padding: 1em;
+}
+
+.heroes button:hover {
+  color: white;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.heroes button.selected {
+  background-color: black;
+  color: white;
+}
